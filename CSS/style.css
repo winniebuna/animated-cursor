@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", san-serif;
+  cursor: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 10vh;
+  align-items: center;
+  margin: auto;
+  background: rgba(20, 20, 29, 0.479);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.nav-links li {
+  padding: 1rem;
+  margin: 0 70px;
+}
+
+.nav-links,
+h1 {
+  flex: 1;
+  padding: 0 70px;
+}
+
+.cursor {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transition-property: background, transform;
+  transform-origin: 100% 100%;
+  z-index: -1;
+  backdrop-filter: grayscale(4) blur(1.5px);
+}
+
+.link-grow {
+  transform: scale(1.5);
+  background: black;
+}
+
+.hovered-link {
+  color: white;
+}
+
+.front-cover img {
+  position: relative;
+  z-index: -3;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.front-words {
+  margin-left: 70px;
+  max-width: 350px;
+}
+
+.front-words h2 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.front-words p {
+  font-weight: 350;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.front-words button {
+  background: none;
+  color: rgb(24, 23, 23);
+  padding: 0.5rem;
+  border-radius: 3px;
+  outline: none;
+  border: 2px solid rgb(24, 23, 23);
+  font-weight: bold;
+}
+
+.front-words button:hover {
+  background-color: rgb(24, 23, 23);
+  color: white;
+  position: relative;
+  z-index: -3;
+}
